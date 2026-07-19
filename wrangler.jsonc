@@ -1,0 +1,13 @@
+﻿// AMD Developer Cloud + Groq Secrets for Cloudflare Workers
+// Run these commands once before deploying:
+//   wrangler secret put AMD_API_URL
+//   wrangler secret put AMD_API_KEY
+//   wrangler secret put AMD_MODEL
+//   wrangler secret put GROQ_API_KEY
+{
+  "$schema": "node_modules/wrangler/config-schema.json",
+  "name": "tanstack-start-app",
+  "compatibility_date": "2025-09-24",
+  "compatibility_flags": ["nodejs_compat"],
+  "main": "@tanstack/react-start/server-entry",
+}
